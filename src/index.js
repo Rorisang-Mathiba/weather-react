@@ -9,9 +9,11 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Form />
-    <App />
-    <Footer />
+    <div className="weather-app">
+      <Form />
+      <App />
+      <Footer />
+    </div>
   </React.StrictMode>
 );
 
