@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div className="current-weather">
+        <div>
+          <h1 className="current-city" id="current-city">
+            Milan
+          </h1>
+          <p className="current-details">
+            <span id="current-date"></span>, moderate rain <br />
+            Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+          </p>
+        </div>
+        <div className="current-temperature">
+          <span className="temperature-icon">☀️</span>
+          <span className="temperature-value" id="current-temperature">
+            24
+          </span>
+          <span className="temperature-unit">°C</span>
+        </div>
+      </div>
+    </main>
   );
 }
-
-export default App;
